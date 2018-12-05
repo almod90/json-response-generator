@@ -1,0 +1,27 @@
+{
+  "name": "almod90/json-response-generator",
+  "description": "JSON Response generator package",
+  "authors": [
+    {
+      "name": "Alex Modin",
+      "email": "almod90@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "almod90\\JsonResponse\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "laravel": {
+      "providers": [
+        "almod90\\JsonResponse\\JsonResponseProvider"
+      ],
+      "aliases": {
+        "JSR": "almod90\\JsonResponse\\Facades\\JSR"
+      }
+    }
+  }
+}
